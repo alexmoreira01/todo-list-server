@@ -21,6 +21,7 @@
     "uuid": "^9.0.0"
   },
   "scripts": {
+    "prepare": "npx prisma generate",
     "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/infra/server.ts",
     "start": "node dist/infra/server.js",
     "build": "babel src --extensions \".js,.ts\" --out-dir dist/ --copy-files",
